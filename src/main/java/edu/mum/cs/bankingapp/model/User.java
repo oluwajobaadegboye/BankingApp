@@ -2,7 +2,7 @@ package edu.mum.cs.bankingapp.model;
 
 import java.util.List;
 
-public class User extends IDObject{
+public class User extends IDObject {
     private String name;
     private String userName;
     private String password; // base64 encoded string
@@ -10,7 +10,7 @@ public class User extends IDObject{
     private String mobile;
     private Address address;
 
-    public User(String id,String name,String userName,String password,String email,String mobile,Address address){
+    public User(String id, String name, String userName, String password, String email, String mobile, Address address) {
         super(id);
         this.name = name;
         this.userName = userName;
