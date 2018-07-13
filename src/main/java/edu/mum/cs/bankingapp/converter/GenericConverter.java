@@ -1,4 +1,4 @@
-package edu.mum.cs.bankingapp.controller;
+package edu.mum.cs.bankingapp.converter;
 
 import com.mongodb.BasicDBObjectBuilder;
 import com.mongodb.DBObject;
