@@ -8,12 +8,17 @@ import edu.mum.cs.bankingapp.model.User;
 import edu.mum.cs.bankingapp.service.TransferService;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
 
+@WebServlet(
+        name = "transfer",
+        urlPatterns = "/transfer"
+)
 public class TransferServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

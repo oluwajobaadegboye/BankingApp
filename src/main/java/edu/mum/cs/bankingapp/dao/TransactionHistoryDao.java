@@ -38,10 +38,14 @@ public class TransactionHistoryDao {
     }
 
     private TransactionHistoryResponse toTransactionHistoryResponse(DBObject doc) {
+        if (doc == null) {
+            return null;
+        }
         TransactionHistoryResponse object = new TransactionHistoryResponse();
         object.setRecipient((String) doc.get("recipient"));
         object.setTransactionAmount((Double)doc.get("transactionAmount"));
         object.setTransactionType((String) doc.get("transactionType"));
+        object.setTransactionDate((LocalDate) doc.get("transactionDate"));
 
         String userId = (String) doc.get("userId");
         String billpaymentId =(String) doc.get("billPaymentId");

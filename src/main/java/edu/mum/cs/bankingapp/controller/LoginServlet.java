@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @WebServlet(
         name = "loginServlet",
-        urlPatterns = {"/login"}
+        urlPatterns = {"/login","","/"}
 )
 public class LoginServlet extends HttpServlet {
 
@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
             Cookie sessionCookie = new Cookie("JSESSIONID", session.getId());
             sessionCookie.setMaxAge(30 * 24 * 60 * 60);
             resp.addCookie(sessionCookie);
-            resp.sendRedirect("WEB-INF/pages/dashboard.jsp");
+            request.getRequestDispatcher("WEB-INF/pages/dashboard.jsp").forward(request,resp);
         }else{
             request.setAttribute("errorMessage","Wrong Username or Password");
             request.getRequestDispatcher("WEB-INF/pages/login.jsp").forward(request,resp);

@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.Date;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -20,15 +21,18 @@ public class TransactionHistory extends IDObject {
     private String transactionType;
     @NotNull
     private String billPaymentId;
+    @NotNull
+    private Date transactionDate;
 
     public TransactionHistory(String id, String userId,double transactionAmount,
-                              String recipient,String transactionType,String billPaymentId) {
+                              String recipient,String transactionType,String billPaymentId,Date transactionDate) {
         super(id);
         this.userId = userId;
         this.transactionAmount = transactionAmount;
         this.recipient = recipient;
         this.transactionType = transactionType;
         this.billPaymentId = billPaymentId;
+        this.transactionDate = transactionDate;
     }
 
     public String getUserId() {
@@ -72,6 +76,14 @@ public class TransactionHistory extends IDObject {
         this.billPaymentId = billPaymentId;
     }
 
+    public Date getTransactionDate() {
+        return transactionDate;
+    }
+
+    public void setTransactionDate(Date transactionDate) {
+        this.transactionDate = transactionDate;
+    }
+
     @Override
     public String toString() {
         return "TransactionHistory{" +
@@ -80,6 +92,7 @@ public class TransactionHistory extends IDObject {
                 ", recipient='" + recipient + '\'' +
                 ", transactionType='" + transactionType + '\'' +
                 ", billPaymentId='" + billPaymentId + '\'' +
+                ", transactionDate=" + transactionDate +
                 '}';
     }
 }

@@ -7,6 +7,7 @@ import edu.mum.cs.bankingapp.model.User;
 import edu.mum.cs.bankingapp.service.TransactionHistoryService;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,6 +16,10 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
 
+@WebServlet(
+        name = "transactionHistory",
+        urlPatterns = "/transactionHistory"
+)
 public class TransactionHistoryServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

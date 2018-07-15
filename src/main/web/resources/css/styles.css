@@ -3,8 +3,42 @@ input[type="submit"]{
     color: #ffffff;
     background-color: darkolivegreen;
 }
-
-h1{
+#errorMessage{
+    color:red;
+    font-family: Arial;
+}
+h1.alert {
+    text-align: center;
     font-family: "Arial Black",Serif;
-    color: aqua;
+}
+#login-form {
+    width: 30%;
+    margin: auto;
+}
+#balance_board {
+    width: 38%;
+    margin: auto;
+    border: 2px solid #D6E7FC;
+    text-align: center;
+}
+#balance_value {
+    font-size: 35px;
+    font-weight: 700;
+}
+#dashboard_buttons {
+    width: 23%;
+    margin: 10px auto;
+}
+#arena {
+    width: 52%;
+    border: 2px solid #D6E7FC;
+    margin: auto;
+    height: 500px;
+}
+#transfer_arena {
+    width: 50%;
+    margin: 5px auto;
+}
+#transfer_form {
+    display: none;
 }

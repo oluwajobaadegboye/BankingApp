@@ -10,7 +10,7 @@
 
     <context-param>
         <param-name>MONGODB_PORT</param-name>
-        <param-value>tting </param-value>
+        <param-value>27017</param-value>
     </context-param>
 
 </web-app>

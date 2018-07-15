@@ -1,7 +1,5 @@
 package edu.mum.cs.bankingapp.controller;
 
-import edu.mum.cs.bankingapp.model.User;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;

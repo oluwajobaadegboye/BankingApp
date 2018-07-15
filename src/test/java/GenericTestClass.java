@@ -11,9 +11,13 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
 import java.net.UnknownHostException;
+import java.security.spec.KeySpec;
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.Base64;
 import java.util.List;
 
 public class GenericTestClass {
@@ -67,7 +71,7 @@ public class GenericTestClass {
 //        Assert.assertNotNull(accountt);
     }
 
-    //    @Test
+//        @Test
     public void testCreateTransfer() {
         TransferService service = new TransferService(mongo);
         Transfer transfer = new Transfer("", 43355252, "Chrisner", LocalDate.now(), "Transfering for Segunn"
@@ -77,7 +81,16 @@ public class GenericTestClass {
     }
 
     @Test
-    public void testFetchTransaction() {
+    public void testHashPassword() throws Exception{
+        KeySpec spec = new PBEKeySpec("joba123".toCharArray(), "saltvalue".getBytes(), 65536, 128);
+        SecretKeyFactory f = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
+        byte[] hash = f.generateSecret(spec).getEncoded();
+        Base64.Encoder enc = Base64.getEncoder();
+        System.out.printf("hash: %s%n", enc.encodeToString(hash));
+    }
+
+//    @Test
+    public void testFetchTransactionHistory() {
         TransactionHistoryService service = new TransactionHistoryService(mongo);
         List<TransactionHistoryResponse> history = service.findAllHistory(user, LocalDate.now(), LocalDate.now());
         history.stream().forEach(System.out::println);

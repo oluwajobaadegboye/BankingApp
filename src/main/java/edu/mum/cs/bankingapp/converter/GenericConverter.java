@@ -25,8 +25,8 @@ public class GenericConverter {
                     Object value = propertyDesc.getReadMethod().invoke(object);
                     if (value instanceof IDObject) {
                         value = mapper.writeValueAsString(value);
-                    }else if(propertyName.equalsIgnoreCase("password")){
-                        value = PasswordUtil.encodePassword((String)value);
+                    } else if (propertyName.equalsIgnoreCase("password")) {
+                        value = PasswordUtil.encodePassword((String) value);
                     }
                     builder.append(propertyName, value);
                 }
@@ -43,11 +43,14 @@ public class GenericConverter {
 
 
     public static User toUser(DBObject doc) {
+        if (doc == null) {
+            return null;
+        }
         ObjectMapper mapper = new ObjectMapper();
         User object = new User("dummy");
         try {
             object.setAddress(mapper.readValue((String) doc.get("address"), Address.class));
-        }catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
         object.setEmail((String) doc.get("email"));
@@ -59,13 +62,17 @@ public class GenericConverter {
         ObjectId id = (ObjectId) doc.get("_id");
         object.setId(id.toString());
         return object;
+
     }
 
-      public static Account toAccount(DBObject doc) {
+    public static Account toAccount(DBObject doc) {
+        if (doc == null) {
+            return null;
+        }
         Account object = new Account("dummy");
         object.setAccountNumber((Integer) doc.get("accountNumber"));
         object.setAccountType((String) doc.get("accountType"));
-        object.setBalance((Double)doc.get("balance"));
+        object.setBalance((Double) doc.get("balance"));
         object.setStatus((String) doc.get("status"));
         object.setUserId((String) doc.get("userId"));
         ObjectId id = (ObjectId) doc.get("_id");
@@ -74,11 +81,14 @@ public class GenericConverter {
     }
 
     public static BillPayment toBillPayment(DBObject doc) {
+        if (doc == null) {
+            return null;
+        }
         BillPayment object = new BillPayment();
 
         object.setName((String) doc.get("name"));
         object.setDescription((String) doc.get("description"));
-        object.setAmount((Double)doc.get("amount"));
+        object.setAmount((Double) doc.get("amount"));
         object.setStatus((String) doc.get("status"));
         ObjectId id = (ObjectId) doc.get("_id");
         object.setId(id.toString());
