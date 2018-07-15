@@ -3,10 +3,6 @@ input[type="submit"]{
     color: #ffffff;
     background-color: darkolivegreen;
 }
-#errorMessage{
-    color:red;
-    font-family: Arial;
-}
 h1.alert {
     text-align: center;
     font-family: "Arial Black",Serif;
