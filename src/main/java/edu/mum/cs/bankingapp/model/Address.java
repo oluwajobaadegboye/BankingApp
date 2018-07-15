@@ -1,13 +1,18 @@
 package edu.mum.cs.bankingapp.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Address extends IDObject {
 
-    @NotNull
-    @Size(min = 2)
-    private String userId;
+//    @NotNull
+//    @Size(min = 2)
+//    private String userId;
     @NotNull
     private String street;
     @NotNull
@@ -19,9 +24,12 @@ public class Address extends IDObject {
     @NotNull
     private String zip;
 
-    public Address(String id,String userId,String street,String city,String state,String country,String zip){
+    public Address(){
+        super("");
+    }
+    public Address(String id,String street,String city,String state,String country,String zip){
         super(id);
-        this.userId = userId;
+//        this.userId = userId;
         this.street = street;
         this.city = city;
         this.state = state;
@@ -31,13 +39,13 @@ public class Address extends IDObject {
     }
 
 
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+//    public String getUserId() {
+//        return userId;
+//    }
+//
+//    public void setUserId(String userId) {
+//        this.userId = userId;
+//    }
 
     public String getStreet() {
         return street;
@@ -77,5 +85,16 @@ public class Address extends IDObject {
 
     public void setZip(String zip) {
         this.zip = zip;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", country='" + country + '\'' +
+                ", zip='" + zip + '\'' +
+                '}';
     }
 }
