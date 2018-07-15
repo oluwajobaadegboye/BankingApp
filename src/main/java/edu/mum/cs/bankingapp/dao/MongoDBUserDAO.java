@@ -1,6 +1,10 @@
 package edu.mum.cs.bankingapp.dao;
+import com.mongodb.BasicDBObjectBuilder;
 import com.mongodb.DBCollection;
+import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
+import edu.mum.cs.bankingapp.converter.GenericConverter;
+import edu.mum.cs.bankingapp.model.User;
 import org.bson.types.ObjectId;
 
 public class MongoDBUserDAO {
@@ -19,10 +23,10 @@ public class MongoDBUserDAO {
 //        return p;
 //    }
 
-//    public void updatePerson(Person p) {
+//    public void updatePerson(User p) {
 //        DBObject query = BasicDBObjectBuilder.start()
 //                .append("_id", new ObjectId(p.getId())).get();
-//        this.col.update(query, AddressConverter.toDBObject(p,Person.class));
+//        this.col.update(query, GenericConverter.toDBObject(p,User.class));
 //    }
 
 
