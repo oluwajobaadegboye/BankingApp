@@ -1,12 +1,9 @@
 import com.mongodb.MongoClient;
-import edu.mum.cs.bankingapp.dao.BillPaymentDao;
-import edu.mum.cs.bankingapp.dao.TransactionHistoryDao;
 import edu.mum.cs.bankingapp.model.*;
 import edu.mum.cs.bankingapp.service.BillPaymentService;
 import edu.mum.cs.bankingapp.service.TransactionHistoryService;
 import edu.mum.cs.bankingapp.service.TransferService;
-import org.apache.commons.codec.Charsets;
-import org.apache.commons.codec.binary.Hex;
+import edu.mum.cs.bankingapp.service.UserService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -39,16 +36,16 @@ public class GenericTestClass {
         }
     }
 
-    //    @Test
+    @Test
     public void userTest() {
-//        UserService service = new UserService(mongo);
+        UserService service = new UserService(mongo);
 //        User user122 = service.createUser(this.user);
-//        User user = service.retrieveUserById("5b4786d5f9d37ce4e6823187");
-//        User user1 = service.retrieveUserByEmail("joba@mum.edu");
-//        User user2 = service.retrieveUserByMobile("+16415050725");
-//        User user3 = service.retrieveUserByUsername("joba");
-//        List<User> users = service.retrieveAllUser();
-//        Assert.assertNotNull(user122);
+        User user = service.retrieveUserById("5b4786d5f9d37ce4e6823187");
+        User user1 = service.retrieveUserByEmail("joba@mum.edu");
+        User user2 = service.retrieveUserByMobile("+16415050725");
+        User user3 = service.retrieveUserByUsername("joba");
+        List<User> users = service.retrieveAllUser();
+        Assert.assertNotNull(user);
     }
 
 
@@ -80,7 +77,7 @@ public class GenericTestClass {
         Assert.assertNotNull(doTransfer);
     }
 
-    @Test
+//    @Test
     public void testHashPassword() throws Exception{
         KeySpec spec = new PBEKeySpec("joba123".toCharArray(), "saltvalue".getBytes(), 65536, 128);
         SecretKeyFactory f = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
@@ -116,13 +113,13 @@ public class GenericTestClass {
     }
 
     //    @Test
-    public void utilTest() {
-        try {
-            String hexString = Hex.encodeHexString("joba123".getBytes(Charsets.UTF_8));
-            String x = new String(new Hex().decode(hexString.getBytes()));
-            System.out.println(hexString + "\n" + x);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    public void utilTest() {
+//        try {
+//            String hexString = Hex.encodeHexString("joba123".getBytes(Charsets.UTF_8));
+//            String x = new String(new Hex().decode(hexString.getBytes()));
+//            System.out.println(hexString + "\n" + x);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 }

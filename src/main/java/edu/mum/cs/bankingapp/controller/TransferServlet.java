@@ -28,10 +28,10 @@ public class TransferServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TransferService service = new TransferService((MongoClient) getServletContext().getAttribute("MONGO_CLIENT"));
-        Transfer transfer  = readRequestBody(req);
+        Transfer transfer = readRequestBody(req);
         User user = (User) getServletContext().getAttribute("user");
-        Response response = service.doTransfer(transfer,user);
-        req.setAttribute("transferResponse",response);
+        Response response = service.doTransfer(transfer, user);
+        req.setAttribute("transferResponse", response);
         req.getRequestDispatcher("WEB-INF/pages/dashboard.jsp").forward(req, resp);
     }
 
@@ -45,7 +45,7 @@ public class TransferServlet extends HttpServlet {
                 buffer.append(line);
             }
             String data = buffer.toString();
-            Transfer transfer = mapper.convertValue(data,Transfer.class);
+            Transfer transfer = mapper.convertValue(data, Transfer.class);
             return transfer;
         } catch (IOException ex) {
             ex.printStackTrace();
