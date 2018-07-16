@@ -39,17 +39,38 @@ $(function () {
             }
         ];
 
+        function toTransactionHistory(transactionHistoryList) {
+            var returnHistory = [];
+            for (var key in transactionHistoryList) {
+                var history = transactionHistoryList[key];
+                var object = {
+                    "recipient": history.recipient,
+                    "transactionAmount": history.transactionAmount,
+                    "transactionType": history.transactionType,
+                    "transactionDate": history.transactionDate
+                };
+                returnHistory.push(object);
+            }
+            return returnHistory;
+        }
+
         $.ajax({
             method: "GET",
             url: "/bank-app/transactionHistory"
         }).done(function (msg) {
+            var msg = JSON.parse(msg);
+            console.log("Messssage   " + msg);
+            var data = toTransactionHistory(msg.transactionHistoryList);
+            console.log("Data is   " + data);
             dataTable = $('#table_id').DataTable({
+                paging: true,
+                ordering: true,
                 data: data,
                 columns: [
-                    {data: 'name'},
-                    {data: 'position'},
-                    {data: 'salary'},
-                    {data: 'office'}
+                    {data: 'recipient'},
+                    {data: 'transactionType'},
+                    {data: 'transactionAmount'},
+                    {data: 'transactionDate'}
                 ]
             });
         }).fail(function () {

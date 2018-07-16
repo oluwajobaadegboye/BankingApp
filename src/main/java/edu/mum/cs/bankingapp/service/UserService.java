@@ -31,7 +31,8 @@ public class UserService {
             response.setResponseCode(ErrorMessage.UNABLE_TO_CREATE_USER.getResponseCode());
             response.setResponseMessage(ErrorMessage.UNABLE_TO_CREATE_USER.getResponseMessage());
         } else {
-            Account account = service.createAccount(userToAccount(user));
+            Account account = userToAccount(user);
+            account = service.createAccount(account);
             if (account != null) {
                 response.setAccount(account);
             }

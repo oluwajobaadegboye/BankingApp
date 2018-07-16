@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<%@ taglib prefix="ct" uri="http://cs.mum.edu"%>
 <html>
 <head>
     <title>Login</title>
@@ -12,7 +12,7 @@
 <body>
 <h1 class="alert alert-primary">Welcome to XYZ bank</h1>
 <form id="login-form" action="login" method="post">
-    <label id="errorMessage">${errorMessage}</label>
+    <ct:messageTag message="${errorMessage}" type="${errorType}"/>
     <div class="form-group">
         <label for="username">Username</label>
         <input type="text" class="form-control" name="username" id="username" aria-describedby="emailHelp" placeholder="Enter Username">

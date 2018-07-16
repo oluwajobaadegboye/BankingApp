@@ -28,7 +28,9 @@
 <div id="dashboard_buttons">
     <button type="button" class="btn btn-primary" id="make_transfer">Make Transfer</button>
     <button type="button" class="btn btn-primary" id="view_transactions">View Transactions</button>
-    <a href="/bank-app/payBill"><button type="button" class="btn btn-primary">Pay Bill</button></a>
+    <a href="/bank-app/payBill">
+        <button type="button" class="btn btn-primary">Pay Bill</button>
+    </a>
 </div>
 
 <div id="arena">
@@ -47,6 +49,14 @@
         <table id="table_id">
             <div class="bold_text">Transaction List</div>
             <div id=""></div>
+            <thead>
+                <tr>
+                    <th>Recipient</th>
+                    <th>Transaction Type</th>
+                    <th>Amount</th>
+                    <th>Transaction Date</th>
+                </tr>
+            </thead>
         </table>
 
     </div>
