@@ -55,7 +55,7 @@ public class GenericTestClass {
     //    @Test
     public void createAccountTest() {
 //        AccountService service = new AccountService(mongo);
-//        Account account = service.creatAccount(this.account);
+//        Account account = service.createAccount(this.account);
 //        Account lastAccount = service.findLastAccount();
 //        Account accountByAccountId = service.findAccountByAccountId("5b4a2bf69a13e5cba0adb937");
 //        Account accountByNumber = service.findAccountByNumber(43355251);
