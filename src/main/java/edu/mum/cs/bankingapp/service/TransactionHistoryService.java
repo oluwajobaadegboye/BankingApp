@@ -15,8 +15,8 @@ public class TransactionHistoryService {
         transactionHistoryDao = new TransactionHistoryDao(client);
     }
 
-    public List<TransactionHistoryResponse> findAllHistory(User user, LocalDate startDate,LocalDate endDate) {
-        return transactionHistoryDao.findAllHistory(user,startDate,endDate);
+    public List<TransactionHistoryResponse> findAllHistory(User user) {
+        return transactionHistoryDao.findAllHistory(user);
     }
 
     public TransactionHistory createHistory(TransactionHistory history){

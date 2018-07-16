@@ -1,9 +1,6 @@
 package edu.mum.cs.bankingapp.dao;
 
-import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
-import com.mongodb.DBObject;
-import com.mongodb.MongoClient;
+import com.mongodb.*;
 import edu.mum.cs.bankingapp.converter.GenericConverter;
 import edu.mum.cs.bankingapp.model.BillPayment;
 import edu.mum.cs.bankingapp.model.TransactionHistory;
@@ -13,6 +10,7 @@ import org.bson.types.ObjectId;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class TransactionHistoryDao {
@@ -26,9 +24,11 @@ public class TransactionHistoryDao {
         this.billPaymentDao = new BillPaymentDao(client);
     }
 
-    public List<TransactionHistoryResponse> findAllHistory(User user, LocalDate startDate, LocalDate endDate) {
+    public List<TransactionHistoryResponse> findAllHistory(User user) {
         List<TransactionHistoryResponse> transactionHistoryResponseList = new ArrayList<>();
-        DBCursor cursor = dbCollection.find();
+        DBObject query = BasicDBObjectBuilder.start()
+                .append("userId", user.getId()).get();
+        DBCursor cursor = dbCollection.find(query);
         while (cursor.hasNext()) {
             DBObject doc = cursor.next();
             TransactionHistoryResponse account = toTransactionHistoryResponse(doc);
@@ -45,7 +45,7 @@ public class TransactionHistoryDao {
         object.setRecipient((String) doc.get("recipient"));
         object.setTransactionAmount((Double)doc.get("transactionAmount"));
         object.setTransactionType((String) doc.get("transactionType"));
-        object.setTransactionDate((LocalDate) doc.get("transactionDate"));
+        object.setTransactionDate((Date) doc.get("transactionDate"));
 
         String userId = (String) doc.get("userId");
         String billpaymentId =(String) doc.get("billPaymentId");

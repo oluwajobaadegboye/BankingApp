@@ -63,7 +63,7 @@ public class BillPayment extends IDObject {
 
     @Override
     public String toString() {
-        return "BillPayment{" +
+        return "BillPaymentServlet{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", amount=" + amount +
