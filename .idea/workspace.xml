@@ -6,16 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08abc9cf-1469-49bb-9040-4e6fcdaf62dd" name="Default" comment="Initial Commit for Banking App">
+    <list default="true" id="4788d292-4674-4433-853c-e41703920626" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/resources/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/resources/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/resources/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/resources/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/billpayment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/billpayment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/resources/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/resources/script/index.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,40 +20,31 @@
       <file leaf-file-name="dashboard.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
+            <state relative-caret-position="249">
               <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="billpayment.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="billpayment.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/billpayment.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/web/resources/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Jsp File" />
-        <option value="CSS File" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>find</find>
-      <find>find(</find>
-      <find>5b4786d5f9d37ce4e6823187</find>
-      <find>commons-codec</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,53 +52,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/page/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/GenericConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AccountTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/MongoDBUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/AccountService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/AccountDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/TransactionHistoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/TransferService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/BillPaymentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/BillPaymentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/Address.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/BillPayment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/IDObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/Response.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/Transfer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/User.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LogoutServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/TransactionHistory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransferDao.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/converter/GenericConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransferServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/util/PasswordUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/listener/MongoDBContextListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/signup.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/UserServlet.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GenericTestClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/AccountServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/filter/AuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp" />
-        <option value="$PROJECT_DIR$/src/main/web/resources/css/styles.css" />
-        <option value="$PROJECT_DIR$/src/main/web/resources/script/index.js" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/billpayment.jsp" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -179,6 +117,11 @@
             <path>
               <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -224,6 +167,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,36 +204,6 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Joba\IdeaProjects\BankingApp\src\main\web\resources" />
-      <recent name="C:\Users\Joba\IdeaProjects\BankingApp\src\main\web\WEB-INF\pages" />
-      <recent name="C:\Users\Joba\IdeaProjects\BankingApp\src\main\java\edu\mum\cs\bankingapp\model" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.mum.cs.bankingapp.dao" />
-      <recent name="edu.mum.cs.bankingapp.service" />
-      <recent name="edu.mum.cs.bankingapp.model" />
-      <recent name="edu.mum.cs.bankingapp.filter" />
-      <recent name="edu.mum.cs.bankingapp.listener" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Joba\IdeaProjects\BankingApp\src\main\web\WEB-INF\page" />
-      <recent name="C:\Users\Joba\IdeaProjects\BankingApp\src\main" />
-    </key>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -286,94 +216,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.tomcat">
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="GenericTestClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="banking-app" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GenericTestClass" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="GenericTestClass.testCreateTransfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BankingApp" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GenericTestClass" />
-      <option name="METHOD_NAME" value="testCreateTransfer" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="GenericTestClass.testFetchTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BankingApp" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GenericTestClass" />
-      <option name="METHOD_NAME" value="testFetchTransaction" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="GenericTestClass.testHashPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BankingApp" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GenericTestClass" />
-      <option name="METHOD_NAME" value="testHashPassword" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="GenericTestClass.userTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="banking-app" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GenericTestClass" />
-      <option name="METHOD_NAME" value="userTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -413,95 +258,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/bank-app" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="BankingApp:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/bank-app" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_BankingApp" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="52651" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="BankingApp:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Tomcat Server.tomcat" />
-      <item itemvalue="JUnit.GenericTestClass.testCreateTransfer" />
-      <item itemvalue="JUnit.GenericTestClass.testFetchTransaction" />
-      <item itemvalue="JUnit.GenericTestClass.testHashPassword" />
-      <item itemvalue="JUnit.GenericTestClass.userTest" />
-      <item itemvalue="JUnit.GenericTestClass" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.GenericTestClass" />
-        <item itemvalue="JUnit.GenericTestClass.userTest" />
-        <item itemvalue="JUnit.GenericTestClass.testHashPassword" />
-        <item itemvalue="JUnit.GenericTestClass.testCreateTransfer" />
-        <item itemvalue="JUnit.GenericTestClass.testFetchTransaction" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -517,7 +273,7 @@
       <workItem from="1531578565662" duration="27124000" />
       <workItem from="1531617581304" duration="27222000" />
       <workItem from="1531691506918" duration="447000" />
-      <workItem from="1531692225150" duration="23758000" />
+      <workItem from="1531692225150" duration="24135000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit for Banking App">
       <created>1531512587828</created>
@@ -590,11 +346,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108669000" />
+    <option name="totallyTimeSpent" value="48000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50064266" side_tool="true" weight="0.4951049" />
@@ -666,9 +421,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4435612" />
     </layout-to-restore>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -701,57 +453,7 @@
       <option name="time" value="50" />
     </breakpoint-manager>
   </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>ctx.getInitParameter(&quot;MONGODB_PORT&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Hex.encodeHexString(&quot;joba123&quot;.getBytes(Charsets.UTF_8)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Hex.encodeHexString(&quot;&quot;.getBytes(Charsets.UTF_8));</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Hex.encodeHexString(&quot;&quot;.getBytes(&quot;&quot;));</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Hex.encodeHexString(&quot;.getBytes(&quot;&quot;));</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Hex.encodeHexString(password.getBytes(&quot;&quot;));</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Hex.encodeHexString(password.getBytes());</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Hex.encodeHexString(password.getBytes(Charsets.UTF_8));</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>PasswordUtil.encodePassword(String.valueOf(password))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.12.3/mongo-java-driver-2.12.3-sources.jar!/org/bson/types/ObjectId.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.12.3/mongo-java-driver-2.12.3-sources.jar!/com/mongodb/BasicDBObjectBuilder.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.1/junit-4.8.1.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1047,13 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/resources/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/resources/script/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1070,7 +765,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
+        <state relative-caret-position="249">
           <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="16" />
         </state>
       </provider>
@@ -1078,88 +773,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/billpayment.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>BankingApp:war exploded</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web (banking-app)|Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.12.6</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>banking-app</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/resources/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
