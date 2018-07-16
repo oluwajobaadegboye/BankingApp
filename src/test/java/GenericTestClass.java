@@ -1,9 +1,6 @@
 import com.mongodb.MongoClient;
 import edu.mum.cs.bankingapp.model.*;
-import edu.mum.cs.bankingapp.service.BillPaymentService;
-import edu.mum.cs.bankingapp.service.TransactionHistoryService;
-import edu.mum.cs.bankingapp.service.TransferService;
-import edu.mum.cs.bankingapp.service.UserService;
+import edu.mum.cs.bankingapp.service.*;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

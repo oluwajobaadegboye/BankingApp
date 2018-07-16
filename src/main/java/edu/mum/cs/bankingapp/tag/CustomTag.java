@@ -6,7 +6,8 @@ import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.io.IOException;
 
 public class CustomTag extends SimpleTagSupport {
-    private String type, message;
+    private String type;
+    private String message;
 
     @Override
     public void doTag() throws JspException, IOException {
