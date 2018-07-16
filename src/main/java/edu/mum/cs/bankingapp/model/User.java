@@ -5,7 +5,7 @@ import java.util.List;
 public class User extends IDObject {
     private String name;
     private String userName;
-    private String password; // base64 encoded string
+    private String password;
     private String email;
     private String mobile;
     private Address address;

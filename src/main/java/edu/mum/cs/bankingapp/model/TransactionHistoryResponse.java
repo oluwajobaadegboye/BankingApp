@@ -3,6 +3,7 @@ package edu.mum.cs.bankingapp.model;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
+import java.util.Date;
 
 public class TransactionHistoryResponse extends IDObject{
     @NotNull
@@ -17,7 +18,7 @@ public class TransactionHistoryResponse extends IDObject{
     @NotNull
     private BillPayment billPayment;
     @NotNull
-    private LocalDate transactionDate;
+    private Date transactionDate;
 
     public TransactionHistoryResponse(){
         super("");
@@ -64,11 +65,11 @@ public class TransactionHistoryResponse extends IDObject{
         this.billPayment = billPayment;
     }
 
-    public LocalDate getTransactionDate() {
+    public Date getTransactionDate() {
         return transactionDate;
     }
 
-    public void setTransactionDate(LocalDate transactionDate) {
+    public void setTransactionDate(Date transactionDate) {
         this.transactionDate = transactionDate;
     }
 

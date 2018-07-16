@@ -2,6 +2,8 @@ package edu.mum.cs.bankingapp.dao;
 
 import com.mongodb.MongoClient;
 import edu.mum.cs.bankingapp.model.*;
+import edu.mum.cs.bankingapp.model.ErrorMessage;
+
 import java.util.Date;
 
 public class TransferDao {
@@ -19,9 +21,9 @@ public class TransferDao {
         boolean isDebited = debitAccount(debitingAccount, transfer);
         if (isDebited) {
             creditAccount(transfer);
-            response = buildResponse("00", "Sucessful", debitingAccount);
+            response = buildResponse(ErrorMessage.SUCCESSFUL, debitingAccount);
         } else {
-            response = buildResponse("09", "Insufficient Balance", debitingAccount);
+            response = buildResponse(ErrorMessage.FAILED, debitingAccount);
         }
         return response;
     }
@@ -54,15 +56,15 @@ public class TransferDao {
         transactionHistoryDao.createHistory(transactionHistory);
     }
 
-    Response buildResponse(String responseCode, String responseMessage, Account account) {
+    Response buildResponse(ErrorMessage message, Account account) {
         Response response = new Response();
-        if (responseCode.equals("00")) {
+        if (message.getResponseCode().equals("00")) {
             response.setAccount(account);
-            response.setResponseCode(responseCode);
-            response.setResponseMessage(responseMessage);
+            response.setResponseCode(message.getResponseCode());
+            response.setResponseMessage(message.getResponseMessage());
         } else {
-            response.setResponseMessage(responseMessage);
-            response.setResponseCode(responseCode);
+            response.setResponseMessage(message.getResponseMessage());
+            response.setResponseCode(message.getResponseCode());
         }
         return response;
     }
