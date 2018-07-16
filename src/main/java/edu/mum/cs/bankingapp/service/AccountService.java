@@ -14,7 +14,7 @@ public class AccountService {
         accountDao = new AccountDao(mongoClient);
     }
 
-    public Account creatAccount(Account account) {
+    public Account createAccount(Account account) {
         return accountDao.creatAccount(account);
     }
 
