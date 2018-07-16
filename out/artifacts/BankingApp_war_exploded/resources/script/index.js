@@ -11,6 +11,8 @@ $(function () {
     $("#view_transactions").click(function () {
         $("#transaction_list").toggle();
         $("#transfer_arena").toggle();
+        $("#no_account").text("");
+        $("#recipient").val("")
 
         if ($('.transfer_form').length > 0) {
             $('.transfer_form')[0].reset();

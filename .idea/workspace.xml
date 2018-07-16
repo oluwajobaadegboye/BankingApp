@@ -8,28 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="08abc9cf-1469-49bb-9040-4e6fcdaf62dd" name="Default" comment="Initial Commit for Banking App">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/AccountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/AccountServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/filter/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/filter/AuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/pages/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/pages/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/resources/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/resources/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/resources/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/AccountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/AccountServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/filter/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/filter/AuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/pages/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/pages/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/resources/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/resources/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/resources/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/AccountServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/AccountServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/filter/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/resources/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/web/resources/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/resources/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GenericTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GenericTestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/AccountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/AccountServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/filter/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/filter/AuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/GenericTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GenericTestClass.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,16 +39,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/web/resources/script/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="46" column="35" lean-forward="true" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+            <state relative-caret-position="109">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/web/resources/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="262">
@@ -205,9 +184,9 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/AccountServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/filter/AuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/web/resources/script/index.js" />
         <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp" />
         <option value="$PROJECT_DIR$/src/main/web/resources/css/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/web/resources/script/index.js" />
       </list>
     </option>
   </component>
@@ -250,7 +229,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
@@ -586,7 +565,7 @@
       <workItem from="1531578565662" duration="27124000" />
       <workItem from="1531617581304" duration="27222000" />
       <workItem from="1531691506918" duration="447000" />
-      <workItem from="1531692225150" duration="22437000" />
+      <workItem from="1531692225150" duration="22957000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit for Banking App">
       <created>1531512587828</created>
@@ -659,7 +638,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107348000" />
+    <option name="totallyTimeSpent" value="107868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1130,13 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/resources/script/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="46" column="35" lean-forward="true" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -1148,6 +1120,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/resources/script/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
