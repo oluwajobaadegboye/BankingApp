@@ -11,6 +11,8 @@ $(function () {
     $("#view_transactions").click(function () {
         $("#transaction_list").toggle();
         $("#transfer_arena").toggle();
+        $("#no_account").text("");
+        $("#recipient").val("")
 
         if ($('.transfer_form').length > 0) {
             $('.transfer_form')[0].reset();
@@ -74,7 +76,7 @@ $(function () {
             var msg = JSON.parse(msg);
             console.log(msg.responseCode);
 
-            if (msg.responseCode === "02") {
+            if (msg.responseCode === "02" || msg.responseCode === "03") {
                 console.log("Error!", msg);
                 $("#no_account").text(msg.responseMessage);
             } else {
