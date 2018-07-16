@@ -24,7 +24,7 @@
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Log in</button>
-        <a href="signup">Or sign up</a>
+        <a href="user">Or Sign up</a>
     </div>
 </form>
 </body>

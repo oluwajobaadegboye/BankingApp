@@ -7,82 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08abc9cf-1469-49bb-9040-4e6fcdaf62dd" name="Default" comment="Initial Commit for Banking App">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/lib/commons-codec-1.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/lib/commons-lang3-3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/LoginServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/LogoutServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/TransferServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/converter/GenericConverter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/AccountDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/BillPaymentDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/MongoDBUserDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/TransferDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/filter/AuthenticationFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/listener/MongoDBContextListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/Account.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/Address.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/BillPayment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/IDObject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/Response.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/TransactionHistory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/Transfer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/AccountService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/BillPaymentService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/TransactionHistoryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/TransferService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/util/PasswordUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/lib/commons-codec-1.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/lib/commons-lang3-3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/lib/jackson-core-2.9.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/lib/jackson-databind-2.9.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/lib/mongo-java-driver-2.12.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/lib/standard-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/lib/validation-api-1.0.0.GA.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/pages/dashboard.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/resources/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/resources/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BankingApp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BankingApp_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BankingApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/listener/MongoDBContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/listener/MongoDBContextListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/util/PasswordUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/util/PasswordUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/pages/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/resources/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/resources/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/resources/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransferServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransferServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/listener/MongoDBContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/listener/MongoDBContextListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/util/PasswordUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/util/PasswordUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/TransferDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/TransferDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/BillPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/BillPayment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/TransactionHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/TransactionHistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/pages/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/pages/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/TransferDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/dao/TransferDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/BillPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/BillPayment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/TransactionHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/TransactionHistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/classes/edu/mum/cs/bankingapp/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/pages/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/pages/signup.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/billpayment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/pages/billpayment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BankingApp_war_exploded/WEB-INF/pages/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/resources/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/resources/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/resources/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/banking_app_Web_exploded/WEB-INF/pages/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GenericTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GenericTestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/banking-app-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/listener/MongoDBContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/listener/MongoDBContextListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/util/PasswordUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/util/PasswordUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/dao/TransferDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/dao/TransferDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/BillPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/BillPayment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/service/TransactionHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/service/TransactionHistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/GenericTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GenericTestClass.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -99,8 +55,17 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+            <state relative-caret-position="188">
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/signup.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9">
+              <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -123,11 +88,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/UserServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -196,7 +182,6 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.java" />
         <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/TransactionHistory.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransferDao.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -209,8 +194,9 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/web/resources/script/index.js" />
         <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/web/resources/css/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/signup.jsp" />
       </list>
     </option>
   </component>
@@ -253,7 +239,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
@@ -321,6 +307,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -604,7 +599,7 @@
       <workItem from="1531578565662" duration="27124000" />
       <workItem from="1531617581304" duration="27222000" />
       <workItem from="1531691506918" duration="447000" />
-      <workItem from="1531692225150" duration="10240000" />
+      <workItem from="1531692225150" duration="10885000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit for Banking App">
       <created>1531512587828</created>
@@ -677,10 +672,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95151000" />
+    <option name="totallyTimeSpent" value="95796000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -702,9 +697,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4951049" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4951049" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.24745762" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25514138" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25514138" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="Learn" order="2" />
@@ -832,7 +827,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/UserService.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.12.3/mongo-java-driver-2.12.3-sources.jar!/com/mongodb/DBCollection.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.12.3/mongo-java-driver-2.12.3-sources.jar!/com/mongodb/MongoClient.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.12.3/mongo-java-driver-2.12.3-sources.jar!/org/bson/types/ObjectId.java" />
@@ -1050,16 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -1081,13 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/signup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1115,13 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/resources/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -1133,6 +1103,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
         </state>
       </provider>
     </entry>
