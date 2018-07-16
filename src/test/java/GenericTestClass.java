@@ -92,7 +92,7 @@ public class GenericTestClass {
 //    @Test
     public void testFetchTransactionHistory() {
         TransactionHistoryService service = new TransactionHistoryService(mongo);
-        List<TransactionHistoryResponse> history = service.findAllHistory(user, LocalDate.now(), LocalDate.now());
+        List<TransactionHistoryResponse> history = service.findAllHistory(user);
         history.stream().forEach(System.out::println);
     }
 

@@ -1,7 +1,9 @@
 package edu.mum.cs.bankingapp.controller;
 
 import com.mongodb.MongoClient;
+import edu.mum.cs.bankingapp.model.Account;
 import edu.mum.cs.bankingapp.model.User;
+import edu.mum.cs.bankingapp.service.AccountService;
 import edu.mum.cs.bankingapp.service.UserService;
 import edu.mum.cs.bankingapp.util.PasswordUtil;
 
@@ -12,7 +14,7 @@ import java.io.IOException;
 
 @WebServlet(
         name = "loginServlet",
-        urlPatterns = {"/login","","/"}
+        urlPatterns = {"/login", "", "/"}
 )
 public class LoginServlet extends HttpServlet {
 
@@ -29,20 +31,23 @@ public class LoginServlet extends HttpServlet {
 
         MongoClient mongo = (MongoClient) getServletContext().getAttribute("MONGO_CLIENT");
         UserService service = new UserService(mongo);
+        AccountService accountService = new AccountService(mongo);
         User user = service.retrieveUserByUsername(username);
 
-        if(user!=null && PasswordUtil.encodePassword(password).equals(user.getPassword())){
+        if (user != null && PasswordUtil.encodePassword(password).equals(user.getPassword())) {
             HttpSession session = request.getSession(true);
             session.setAttribute("user", user);
             session.setAttribute("sessionId", session.getId());
+            Account account = accountService.findAccountByUserId(user.getId());
+            request.setAttribute("account", account);
 
             Cookie sessionCookie = new Cookie("JSESSIONID", session.getId());
             sessionCookie.setMaxAge(30 * 24 * 60 * 60);
             resp.addCookie(sessionCookie);
-            request.getRequestDispatcher("WEB-INF/pages/dashboard.jsp").forward(request,resp);
-        }else{
-            request.setAttribute("errorMessage","Wrong Username or Password");
-            request.getRequestDispatcher("WEB-INF/pages/login.jsp").forward(request,resp);
+            request.getRequestDispatcher("WEB-INF/pages/dashboard.jsp").forward(request, resp);
+        } else {
+            request.setAttribute("errorMessage", "Wrong Username or Password");
+            request.getRequestDispatcher("WEB-INF/pages/login.jsp").forward(request, resp);
         }
     }
 
