@@ -40,10 +40,12 @@
             </div>
             <button type="submit" class="btn btn-success mb-2 confirm_recipient">Confirm recipient</button>
         </form>
+        <div id="loaderDiv">Loading...</div>
+        <div id="no_account"></div>
     </div>
     <div id="transaction_list">
         <table id="table_id">
-            <div>Transaction List</div>
+            <div class="bold_text">Transaction List</div>
             <div id=""></div>
         </table>
 

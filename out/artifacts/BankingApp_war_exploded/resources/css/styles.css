@@ -61,4 +61,22 @@ h1.alert {
     width: 80%;
     margin: auto;
     text-align: center;
+    display: none;
+}
+#no_account {
+    color: red;
+    text-align: center;
+    margin-top: -4%;
+    font-size: 14px;
+}
+#loaderDiv {
+    display: none;
+    color: greenyellow;
+    text-align: center;
+    margin-top: -2%;
+    font-size: 14px;
+}
+.bold_text {
+    font-weight: 700;
+    margin: 10px;
 }
