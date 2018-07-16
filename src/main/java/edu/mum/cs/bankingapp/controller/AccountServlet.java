@@ -31,6 +31,7 @@ public class AccountServlet extends HttpServlet {
         Response response = new Response();
         if ("".equals(accountNumber)) {
             req.setAttribute("errorMessage", "Wrong Username or Password");
+            req.setAttribute("errorType", "error");
             response.setResponseCode(ErrorMessage.INVALID_ACCOUNT_INPUT.getResponseCode());
             response.setResponseMessage(ErrorMessage.INVALID_ACCOUNT_INPUT.getResponseMessage());
         } else {

@@ -36,20 +36,19 @@ public class UserServlet extends HttpServlet {
         String password = req.getParameter("password");
         String mobile = req.getParameter("mobile");
         String addressString = req.getParameter("address");
-        Address address = new Address("", "street", "city", "state", "country", "zip");
+        Address address = new Address("", addressString, "city", "state", "country", "zip");
         User userInput = new User("", name, username, password, email, mobile, address);
 
-
-        String userString = req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
-        User user = objectMapper.convertValue(userInput, User.class);
         MongoClient mongo = (MongoClient) getServletContext().getAttribute("MONGO_CLIENT");
         UserService service = new UserService(mongo);
-        Response response = service.createUser(user);
+        Response response = service.createUser(userInput);
         if (response.getResponseCode().equals(ErrorMessage.SUCCESSFUL.getResponseCode())) {
             req.setAttribute("errorMessage", "Account creation success");
+            req.setAttribute("errorType", "success");
             req.getRequestDispatcher("WEB-INF/pages/login.jsp").forward(req, resp);
         } else {
             req.setAttribute("errorMessage", "Operation Failed");
+            req.setAttribute("errorType", "error");
             req.getRequestDispatcher("WEB-INF/pages/signup.jsp").forward(req, resp);
         }
     }
