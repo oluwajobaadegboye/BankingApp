@@ -2,6 +2,7 @@ package edu.mum.cs.bankingapp.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mongodb.MongoClient;
+import edu.mum.cs.bankingapp.model.Address;
 import edu.mum.cs.bankingapp.model.ErrorMessage;
 import edu.mum.cs.bankingapp.model.Response;
 import edu.mum.cs.bankingapp.model.User;
@@ -29,18 +30,18 @@ public class UserServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        String name = req.getParameter("name");
-//        String username = req.getParameter("username");
-//        String mobile = req.getParameter("mobile");
-//        String email = req.getParameter("email");
-//        String password = req.getParameter("password");
-//        String addressString = req.getParameter("address");
-//        Address address = new Address("","street","city","state","country","zip");
-//        User userInput = new User("",name,username,password,email,mobile,address);
+        String username = req.getParameter("username");
+        String email = req.getParameter("email");
+        String name = req.getParameter("name");
+        String password = req.getParameter("password");
+        String mobile = req.getParameter("mobile");
+        String addressString = req.getParameter("address");
+        Address address = new Address("", "street", "city", "state", "country", "zip");
+        User userInput = new User("", name, username, password, email, mobile, address);
 
 
         String userString = req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
-        User user = objectMapper.convertValue(userString, User.class);
+        User user = objectMapper.convertValue(userInput, User.class);
         MongoClient mongo = (MongoClient) getServletContext().getAttribute("MONGO_CLIENT");
         UserService service = new UserService(mongo);
         Response response = service.createUser(user);

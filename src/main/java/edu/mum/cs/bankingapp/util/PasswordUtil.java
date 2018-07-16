@@ -1,8 +1,5 @@
 package edu.mum.cs.bankingapp.util;
 
-import org.apache.commons.codec.Charsets;
-import org.apache.commons.codec.binary.Hex;
-
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 import java.security.NoSuchAlgorithmException;
@@ -24,12 +21,4 @@ public class PasswordUtil {
         }
     }
 
-    public static String decodePassword(String encodedPassword) {
-        try {
-            return new String(new Hex().decode(encodedPassword.getBytes()));
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
 }

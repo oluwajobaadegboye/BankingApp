@@ -6,6 +6,7 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="BankingApp" />
+          <element id="module-output" name="banking-app" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
@@ -15,8 +16,12 @@
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.mongodb:mongo-java-driver:2.12.3" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.0" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="banking-app/web/Web" />
+      <element id="artifact" artifact-name="banking-app:Web exploded" />
     </root>
   </artifact>
 </component>
