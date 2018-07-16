@@ -12,5 +12,8 @@
 <div id="balance_board">
     <h2>Pay</h2>
 </div>
+<div id="arena">
+
+</div>
 </body>
 </html>

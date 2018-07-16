@@ -29,6 +29,7 @@ public class AccountServlet extends HttpServlet {
         MongoClient mongo = (MongoClient) getServletContext().getAttribute("MONGO_CLIENT");
         AccountService service = new AccountService(mongo);
         Response response = new Response();
+
         if ("".equals(accountNumber)) {
             req.setAttribute("errorMessage", "Wrong Username or Password");
             response.setResponseCode(ErrorMessage.INVALID_ACCOUNT_INPUT.getResponseCode());
