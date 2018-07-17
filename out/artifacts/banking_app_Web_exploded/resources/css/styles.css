@@ -39,8 +39,8 @@ h1.alert {
 }
 
 #transfer_arena {
-    width: 50%;
-    margin: 5px auto;
+    width: 58%;
+    margin: 3px auto;
 }
 
 #transfer_form_arena {
@@ -62,7 +62,6 @@ h1.alert {
 
 #recipient_form {
     border: 2px solid #D6E7FC;
-    margin-top: 5px;
     border-radius: 10px;
     padding-top: 8px;
     justify-content: center;
@@ -113,4 +112,12 @@ h1.alert {
     color: green;
     font-family: Arial;
     font-size: 16px;
+}
+
+.goToDashboard {
+    float: left;
+}
+
+.logout {
+    float: right;
 }

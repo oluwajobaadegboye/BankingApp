@@ -20,7 +20,11 @@
             src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
 </head>
 <body>
-<h1 class="alert alert-primary">Dashboard</h1>
+<h1 class="alert alert-primary">
+    <a href="/bank-app/payBill"><button type="submit" class="btn btn-secondary goToDashboard" id="goToDashboard">Pay Bill</button></a>
+    Dashboard
+    <a href="logout"><button type="submit" class="btn btn-primary logout" id="logout">Logout</button></a>
+</h1>
 <div id="balance_board">
     <h2>Your balance</h2>
     <div id="balance_value">$${account.balance}</div>

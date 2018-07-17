@@ -43,7 +43,6 @@ $(function () {
             url: "/bank-app/transactionHistory"
         }).done(function (msg) {
             var msg = JSON.parse(msg);
-            console.log("Messssage   " + msg);
             var data = toTransactionHistory(msg.transactionHistoryList);
 
             dataTable = $('#table_id').DataTable({
@@ -82,6 +81,7 @@ $(function () {
 
             if (msg.responseCode === "02" || msg.responseCode === "03") {
                 console.log("Error!", msg);
+                $("#no_account").text(msg.responseMessage);
             } else {
                 console.log(msg);
                 $("#recipient_name").val(msg.user.name);

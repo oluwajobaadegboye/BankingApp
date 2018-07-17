@@ -17,7 +17,11 @@
     </script>
 </head>
 <body>
-<h1 class="alert alert-primary">Bill Payment</h1>
+<h1 class="alert alert-primary">
+    <a href="dashboard"><button type="submit" class="btn btn-secondary goToDashboard" id="goToDashboard">Dashboard</button></a>
+    Bill Payment
+    <a href="logout"><button type="submit" class="btn btn-primary logout" id="logout">Logout</button></a>
+</h1>
 <div id="balance_board">
     <h2>Pay</h2>
 </div>

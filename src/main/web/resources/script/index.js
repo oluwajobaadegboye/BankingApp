@@ -81,6 +81,7 @@ $(function () {
 
             if (msg.responseCode === "02" || msg.responseCode === "03") {
                 console.log("Error!", msg);
+                $("#no_account").text(msg.responseMessage);
             } else {
                 console.log(msg);
                 $("#recipient_name").val(msg.user.name);
