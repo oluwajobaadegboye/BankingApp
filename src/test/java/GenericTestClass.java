@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mongodb.MongoClient;
 import edu.mum.cs.bankingapp.model.*;
 import edu.mum.cs.bankingapp.service.*;
@@ -7,6 +8,7 @@ import org.junit.Test;
 
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
+import java.io.IOException;
 import java.net.UnknownHostException;
 import java.security.spec.KeySpec;
 import java.time.LocalDate;
@@ -33,7 +35,7 @@ public class GenericTestClass {
         }
     }
 
-    @Test
+//    @Test
     public void userTest() {
         UserService service = new UserService(mongo);
 //        User user122 = service.createUser(this.user);
@@ -90,18 +92,18 @@ public class GenericTestClass {
         history.stream().forEach(System.out::println);
     }
 
-    //    @Test
+//        @Test
     public void testCreateBillPaymentItem() {
         BillPaymentService service = new BillPaymentService(mongo);
         List<BillPayment> billPayments = Arrays.asList(
-                new BillPayment(null, "Cable TV", "Payment for Cable TV", 50, "Active"),
-                new BillPayment(null, "High Speed Internet", "Payment for High Speed Internet", 50, "Active"),
-                new BillPayment(null, "Mobile Phone", "Payment for Mobile Phone", 50, "Active"),
-                new BillPayment(null, "Rent", "Payment for Rent", 50, "Active"),
-                new BillPayment(null, "Car Insurance", "Payment for Car Insurance", 50, "Active"),
-                new BillPayment(null, "Electricity", "Payment for Electricity", 50, "Active"),
-                new BillPayment(null, "Water Bill", "Payment for Water Bill", 50, "Active"),
-                new BillPayment(null, "Trash Bill", "Payment for Trash Bill", 50, "Active")
+                new BillPayment(null, "Cable TV", "Payment for Cable TV", 55, "Active"),
+                new BillPayment(null, "High Speed Internet", "Payment for High Speed Internet", 30, "Active"),
+                new BillPayment(null, "Mobile Phone", "Payment for Mobile Phone", 45, "Active"),
+                new BillPayment(null, "Rent", "Payment for Rent", 100, "Active"),
+                new BillPayment(null, "Car Insurance", "Payment for Car Insurance", 250, "Active"),
+                new BillPayment(null, "Electricity", "Payment for Electricity", 25, "Active"),
+                new BillPayment(null, "Water Bill", "Payment for Water Bill", 60, "Active"),
+                new BillPayment(null, "Trash Bill", "Payment for Trash Bill", 51, "Active")
         );
         for (BillPayment billPament : billPayments) {
             BillPayment bill = service.createBill(billPament);
@@ -109,6 +111,13 @@ public class GenericTestClass {
         }
     }
 
+//    @Test
+    public void testMarshall() throws IOException {
+        String data = "{\"accountNumber\":\"43355252\",\"recipientName\":\"Oladipupo Isola\",\"narration\":\"payment\",\"transferAmount\":\"67.87\"}";
+        ObjectMapper mapper = new ObjectMapper();
+        Transfer transfer = mapper.readValue(data, Transfer.class);
+        System.out.println(transfer);
+    }
     //    @Test
 //    public void utilTest() {
 //        try {

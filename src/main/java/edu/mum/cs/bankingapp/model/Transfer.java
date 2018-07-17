@@ -9,8 +9,8 @@ public class Transfer extends IDObject {
     private String narration;
     private Double transferAmount;
 
-    private Transfer(String id) {
-        super(id);
+    private Transfer() {
+        super("");
     }
 
     public Transfer(String id, Integer accountNumber, String recipientName, LocalDate transactionDate,

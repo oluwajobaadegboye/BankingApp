@@ -2,6 +2,7 @@ package edu.mum.cs.bankingapp.controller;
 
 import com.mongodb.MongoClient;
 import edu.mum.cs.bankingapp.model.Account;
+import edu.mum.cs.bankingapp.model.Response;
 import edu.mum.cs.bankingapp.model.User;
 import edu.mum.cs.bankingapp.service.AccountService;
 import edu.mum.cs.bankingapp.service.UserService;
@@ -38,8 +39,9 @@ public class LoginServlet extends HttpServlet {
             HttpSession session = request.getSession(true);
             session.setAttribute("user", user);
             session.setAttribute("sessionId", session.getId());
-            Account account = accountService.findAccountByUserId(user.getId());
-            request.setAttribute("account", account);
+            Response response = accountService.findAccountByUserId(user.getId());
+            Account account = response.getAccount() != null ? response.getAccount() : new Account("");
+            session.setAttribute("account", account);
 
             Cookie sessionCookie = new Cookie("JSESSIONID", session.getId());
             sessionCookie.setMaxAge(30 * 24 * 60 * 60);

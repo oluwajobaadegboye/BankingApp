@@ -1,16 +1,17 @@
 package edu.mum.cs.bankingapp.model;
 
-public enum  ErrorMessage {
-    SUCCESSFUL("00","Successful"),
+public enum ErrorMessage {
+    SUCCESSFUL("00", "Successful"),
     FAILED("01", "Insufficient Balance"),
-    INVALID_ACCOUNT("02","Account Does not Exist"),
-    INVALID_ACCOUNT_INPUT("03","Invalid Account Entered"),
-    UNABLE_TO_CREATE_USER("04","User creation failed");
+    INVALID_ACCOUNT("02", "Account Does not Exist"),
+    INVALID_ACCOUNT_INPUT("03", "Invalid Account Entered"),
+    UNABLE_TO_CREATE_USER("04", "User creation failed"),
+    BILL_DOES_NOT_EXIST("05", "BIll Does not exist or have being deleted");
 
     private String responseCode;
     private String responseMessage;
 
-    ErrorMessage(String responseCode,String responseMessage){
+    ErrorMessage(String responseCode, String responseMessage) {
         this.responseCode = responseCode;
         this.responseMessage = responseMessage;
     }
