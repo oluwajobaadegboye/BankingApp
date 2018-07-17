@@ -5,7 +5,8 @@ import javax.validation.constraints.Size;
 import java.time.LocalDate;
 import java.util.Date;
 
-public class TransactionHistoryResponse extends IDObject{
+public class TransactionHistoryResponse extends IDObject {
+
     @NotNull
     private User user;
     @NotNull

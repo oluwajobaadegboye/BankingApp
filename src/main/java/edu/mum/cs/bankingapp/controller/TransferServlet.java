@@ -1,5 +1,6 @@
 package edu.mum.cs.bankingapp.controller;
 
+import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mongodb.MongoClient;
 import edu.mum.cs.bankingapp.model.Response;
@@ -12,14 +13,17 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet(
         name = "transfer",
         urlPatterns = "/transfer"
 )
 public class TransferServlet extends HttpServlet {
+    ObjectMapper objectMapper = new ObjectMapper();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("WEB-INF/pages/dashboard.jsp").forward(req, resp);
@@ -29,10 +33,17 @@ public class TransferServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TransferService service = new TransferService((MongoClient) getServletContext().getAttribute("MONGO_CLIENT"));
         Transfer transfer = readRequestBody(req);
-        User user = (User) getServletContext().getAttribute("user");
+        HttpSession session = req.getSession(false);
+        User user = session==null ? null : (User) session.getAttribute("user");
         Response response = service.doTransfer(transfer, user);
         req.setAttribute("transferResponse", response);
-        req.getRequestDispatcher("WEB-INF/pages/dashboard.jsp").forward(req, resp);
+        PrintWriter out = resp.getWriter();
+        try {
+            out.print(objectMapper.writeValueAsString(response));
+        } catch (JsonGenerationException e) {
+            e.printStackTrace();
+        }
+//        req.getRequestDispatcher("WEB-INF/pages/dashboard.jsp").forward(req, resp);
     }
 
     private Transfer readRequestBody(HttpServletRequest request) {
@@ -45,7 +56,7 @@ public class TransferServlet extends HttpServlet {
                 buffer.append(line);
             }
             String data = buffer.toString();
-            Transfer transfer = mapper.convertValue(data, Transfer.class);
+            Transfer transfer = mapper.readValue(data, Transfer.class);
             return transfer;
         } catch (IOException ex) {
             ex.printStackTrace();

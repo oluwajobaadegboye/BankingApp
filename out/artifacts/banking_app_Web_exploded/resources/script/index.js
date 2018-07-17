@@ -43,6 +43,7 @@ $(function () {
             url: "/bank-app/transactionHistory"
         }).done(function (msg) {
             var msg = JSON.parse(msg);
+            console.log("Messssage   " + msg);
             var data = toTransactionHistory(msg.transactionHistoryList);
 
             dataTable = $('#table_id').DataTable({
