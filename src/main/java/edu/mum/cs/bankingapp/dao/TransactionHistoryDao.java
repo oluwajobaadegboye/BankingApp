@@ -31,8 +31,8 @@ public class TransactionHistoryDao {
         DBCursor cursor = dbCollection.find(query);
         while (cursor.hasNext()) {
             DBObject doc = cursor.next();
-            TransactionHistoryResponse account = toTransactionHistoryResponse(doc);
-            transactionHistoryResponseList.add(account);
+            TransactionHistoryResponse response = toTransactionHistoryResponse(doc);
+            transactionHistoryResponseList.add(response);
         }
         return transactionHistoryResponseList;
     }

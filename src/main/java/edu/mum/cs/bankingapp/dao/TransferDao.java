@@ -34,6 +34,12 @@ public class TransferDao {
         return transactionHistory;
     }
 
+    private TransactionHistory buildTransferHistoryForBillPayment(String userId, BillPayment billPayment, Double transferAmt) {
+        TransactionHistory transactionHistory = new TransactionHistory("", userId, transferAmt,
+                billPayment.getName(), "Bill Payment", billPayment.getId(), new Date());
+        return transactionHistory;
+    }
+
     private boolean debitAccount(Account debitingAccount, Transfer transfer) {
         boolean isDebited = false;
         if (debitingAccount.getBalance() >= transfer.getTransferAmount()) {
@@ -41,6 +47,19 @@ public class TransferDao {
             accountDao.updateAccount(debitingAccount);
 
             TransactionHistory transactionHistory = buildTransferHistory(debitingAccount.getUserId(), transfer, (-1 * transfer.getTransferAmount()));
+            transactionHistoryDao.createHistory(transactionHistory);
+            isDebited = true;
+        }
+        return isDebited;
+    }
+
+    public boolean debitAccountForPayBill(Account debitingAccount, BillPayment billPayment) {
+        boolean isDebited = false;
+        if (debitingAccount.getBalance() >= billPayment.getAmount()) {
+            debitingAccount.setBalance(debitingAccount.getBalance() - billPayment.getAmount());
+            accountDao.updateAccount(debitingAccount);
+
+            TransactionHistory transactionHistory = buildTransferHistoryForBillPayment(debitingAccount.getUserId(), billPayment, (-1 * billPayment.getAmount()));
             transactionHistoryDao.createHistory(transactionHistory);
             isDebited = true;
         }

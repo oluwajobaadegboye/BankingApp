@@ -11,7 +11,7 @@ import java.io.IOException;
 
 @WebFilter(
         filterName = "authenticationFilter",
-        urlPatterns = {"/account", "/payBill", "/logout", "/transactionHistory", "/transfer"}
+        urlPatterns = {"/account", "/payBill", "/logout", "/transactionHistory", "/transfer","/dashboard"}
 )
 public class AuthenticationFilter implements Filter {
     public void init(FilterConfig filterConfig) throws ServletException {

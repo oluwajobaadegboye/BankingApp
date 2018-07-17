@@ -20,10 +20,14 @@
             src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
 </head>
 <body>
-<h1 class="alert alert-primary">Dashboard</h1>
+<h1 class="alert alert-primary">
+    <a href="/bank-app/payBill"><button type="submit" class="btn btn-secondary goToDashboard" id="goToDashboard">Pay Bill</button></a>
+    Dashboard
+    <a href="logout"><button type="submit" class="btn btn-primary logout" id="logout">Logout</button></a>
+</h1>
 <div id="balance_board">
     <h2>Your balance</h2>
-    <div id="balance_value">$569.30</div>
+    <div id="balance_value">$${account.balance}</div>
 </div>
 <div id="dashboard_buttons">
     <button type="button" class="btn btn-primary" id="make_transfer">Make Transfer</button>
@@ -65,15 +69,22 @@
     <form id="transfer_form">
         <div class="form-group">
             <label for="recipient_name">Recipient Name</label>
-            <input type="text" class="form-control" id="recipient_name" disabled>
+            <input type="text" class="form-control" name="recipient_name" id="recipient_name" disabled>
         </div>
         <div class="form-group">
-            <label for="recipient_account">Recipient Account</label>
-            <input type="text" class="form-control" id="recipient_account" disabled>
+            <label for="recipient_email">Recipient Email</label>
+            <input type="email" class="form-control" name="recipient_email" id="recipient_email" disabled>
+        </div>
+        <div class="form-group">
+            <input type="hidden" class="form-control" name="recipient_account" id="recipient_account" disabled>
         </div>
         <div class="form-group">
             <label for="amount">Amount</label>
-            <input type="text" class="form-control" id="amount" placeholder="Enter amount">
+            <input type="text" class="form-control" id="amount" name="amount" value="" placeholder="Enter amount">
+        </div>
+        <div class="form-group">
+            <label for="narration">Narration</label>
+            <input type="text" class="form-control" id="narration" name="narration" value="" placeholder="e.g for gifts">
         </div>
         <button type="submit" class="btn btn-primary" id="transfer">Send</button>
     </form>

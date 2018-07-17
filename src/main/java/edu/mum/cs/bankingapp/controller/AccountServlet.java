@@ -36,15 +36,7 @@ public class AccountServlet extends HttpServlet {
             response.setResponseCode(ErrorMessage.INVALID_ACCOUNT_INPUT.getResponseCode());
             response.setResponseMessage(ErrorMessage.INVALID_ACCOUNT_INPUT.getResponseMessage());
         } else {
-            Account account = service.findAccountByNumber(Integer.parseInt(accountNumber));
-            if (account != null) {
-                response.setResponseCode(ErrorMessage.SUCCESSFUL.getResponseCode());
-                response.setResponseMessage(ErrorMessage.SUCCESSFUL.getResponseMessage());
-                response.setAccount(account);
-            } else {
-                response.setResponseCode(ErrorMessage.INVALID_ACCOUNT.getResponseCode());
-                response.setResponseMessage(ErrorMessage.INVALID_ACCOUNT.getResponseMessage());
-            }
+            response = service.findAccountByNumber(Integer.parseInt(accountNumber));
         }
         PrintWriter out = resp.getWriter();
         try {

@@ -20,35 +20,19 @@ $(function () {
 
         $('#transfer_form').hide();
 
-        var data = [
-            {
-                "name": "Tiger Nixon",
-                "position": "System Architect",
-                "salary": "$3,120",
-                "start_date": "2011/04/25",
-                "office": "Edinburgh",
-                "extn": "5421"
-            },
-            {
-                "name": "Garrett Winters",
-                "position": "Director",
-                "salary": "$5,300",
-                "start_date": "2011/07/25",
-                "office": "Edinburgh",
-                "extn": "8422"
-            }
-        ];
-
         function toTransactionHistory(transactionHistoryList) {
             var returnHistory = [];
             for (var key in transactionHistoryList) {
                 var history = transactionHistoryList[key];
+                var date = history.transactionDate;
+
                 var object = {
                     "recipient": history.recipient,
                     "transactionAmount": history.transactionAmount,
                     "transactionType": history.transactionType,
-                    "transactionDate": history.transactionDate
+                    "transactionDate": new Date(date).toLocaleString()
                 };
+
                 returnHistory.push(object);
             }
             return returnHistory;
@@ -59,9 +43,8 @@ $(function () {
             url: "/bank-app/transactionHistory"
         }).done(function (msg) {
             var msg = JSON.parse(msg);
-            console.log("Messssage   " + msg);
             var data = toTransactionHistory(msg.transactionHistoryList);
-            console.log("Data is   " + data);
+
             dataTable = $('#table_id').DataTable({
                 paging: true,
                 ordering: true,
@@ -95,22 +78,53 @@ $(function () {
         }).done(function (msg) {
             $("#loaderDiv").hide();
             var msg = JSON.parse(msg);
-            console.log(msg.responseCode);
 
             if (msg.responseCode === "02" || msg.responseCode === "03") {
                 console.log("Error!", msg);
                 $("#no_account").text(msg.responseMessage);
             } else {
+                console.log(msg);
+                $("#recipient_name").val(msg.user.name);
+                $("#recipient_email").val(msg.user.email);
+                $("#recipient_account").val(msg.account.accountNumber);
+                $("#no_account").text(msg.responseMessage);
                 transfer.append($('#transfer_form').show());
             }
         }).fail(function (msg) {
             console.log(msg);
-            console.log("Account not verified");
         });
     })
 
     $("#transfer_form").submit(function (e) {
         e.preventDefault();
-        console.log(e);
-    })
+        console.log($("#recipient_name").val());
+        console.log($("#recipient_account").val());
+        console.log($('#transfer_form').serialize());
+
+        var payload = {
+            "accountNumber": $("#recipient_account").val(),
+            "recipientName": $("#recipient_name").val(),
+            "narration": $("#narration").val(),
+            "transferAmount": $("#amount").val()
+        };
+        console.log(JSON.stringify(payload));
+
+        $.ajax({
+            method: "POST",
+            url: "/bank-app/transfer",
+            data: JSON.stringify(payload),
+            beforeSend: function () {
+            }
+        }).done(function (msg) {
+            var account = JSON.parse(msg).account;
+            $("#balance_value").text("$" + account.balance);
+            console.log(account);
+            $('#transfer_form')[0].reset();
+            $('#transfer_form').hide();
+        }).fail(function (msg) {
+            console.log(msg);
+            console.log("FAILED")
+        });
+    });
+
 });

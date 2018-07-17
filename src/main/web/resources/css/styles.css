@@ -3,14 +3,17 @@ input[type="submit"] {
     color: #ffffff;
     background-color: darkolivegreen;
 }
+
 h1.alert {
     text-align: center;
     font-family: "Arial Black", Serif;
 }
+
 #login-form {
     width: 30%;
     margin: auto;
 }
+
 #balance_board {
     width: 38%;
     margin: auto;
@@ -36,39 +39,49 @@ h1.alert {
 }
 
 #transfer_arena {
-    width: 50%;
-    margin: 5px auto;
+    width: 58%;
+    margin: 3px auto;
 }
+
 #transfer_form_arena {
     display: none;
 }
+
+#transfer_form {
+    margin-top: 15px;
+}
+
 #errorMessage {
     color: red;
     font-size: 14px;
 }
+
 #dashboard_buttons button {
     margin: 6px;
 }
+
 #recipient_form {
     border: 2px solid #D6E7FC;
-    margin-top: 5px;
     border-radius: 10px;
     padding-top: 8px;
     justify-content: center;
     display: flex;
 }
+
 #transaction_list {
     width: 80%;
     margin: auto;
     text-align: center;
     display: none;
 }
+
 #no_account {
     color: red;
     text-align: center;
     margin-top: -4%;
     font-size: 14px;
 }
+
 #loaderDiv {
     display: none;
     color: greenyellow;
@@ -76,7 +89,35 @@ h1.alert {
     margin-top: -2%;
     font-size: 14px;
 }
+
 .bold_text {
     font-weight: 700;
     margin: 10px;
+}
+#payBill_form{
+    width: 50%;
+}
+#bill_form_arena {
+    border: 2px solid #D6E7FC;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-top: 8px;
+    justify-content: center;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+#success {
+    color: green;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.goToDashboard {
+    float: left;
+}
+
+.logout {
+    float: right;
 }

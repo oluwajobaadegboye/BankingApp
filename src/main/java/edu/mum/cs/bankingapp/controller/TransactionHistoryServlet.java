@@ -17,7 +17,9 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.LocalDate;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @WebServlet(
         name = "transactionHistory",
@@ -32,6 +34,7 @@ public class TransactionHistoryServlet extends HttpServlet {
         TransactionHistoryService service = new TransactionHistoryService((MongoClient) getServletContext().getAttribute("MONGO_CLIENT"));
 
         List<TransactionHistoryResponse> transactionHistoryList = service.findAllHistory(user);
+
         PrintWriter out = resp.getWriter();
         try {
             Response response = new Response();
