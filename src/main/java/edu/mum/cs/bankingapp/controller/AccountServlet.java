@@ -26,24 +26,35 @@ public class AccountServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String accountNumber = req.getParameter("recipient");
-        MongoClient mongo = (MongoClient) getServletContext().getAttribute("MONGO_CLIENT");
-        AccountService service = new AccountService(mongo);
         Response response = new Response();
+        PrintWriter out = resp.getWriter();
+        try{
+            Integer.parseInt(accountNumber);
 
-        if ("".equals(accountNumber)) {
-            req.setAttribute("errorMessage", "Wrong Username or Password");
-            req.setAttribute("errorType", "error");
+            MongoClient mongo = (MongoClient) getServletContext().getAttribute("MONGO_CLIENT");
+            AccountService service = new AccountService(mongo);
+
+            if ("".equals(accountNumber)) {
+                req.setAttribute("errorMessage", "Wrong Username or Password");
+                req.setAttribute("errorType", "error");
+                response.setResponseCode(ErrorMessage.INVALID_ACCOUNT_INPUT.getResponseCode());
+                response.setResponseMessage(ErrorMessage.INVALID_ACCOUNT_INPUT.getResponseMessage());
+            } else {
+                response = service.findAccountByNumber(Integer.parseInt(accountNumber));
+            }
+
+            try {
+                out.print(objectMapper.writeValueAsString(response));
+            } catch (JsonGenerationException e) {
+                e.printStackTrace();
+            }
+        }catch (NumberFormatException ex){
+            ex.printStackTrace();
             response.setResponseCode(ErrorMessage.INVALID_ACCOUNT_INPUT.getResponseCode());
             response.setResponseMessage(ErrorMessage.INVALID_ACCOUNT_INPUT.getResponseMessage());
-        } else {
-            response = service.findAccountByNumber(Integer.parseInt(accountNumber));
-        }
-        PrintWriter out = resp.getWriter();
-        try {
             out.print(objectMapper.writeValueAsString(response));
-        } catch (JsonGenerationException e) {
-            e.printStackTrace();
         }
+
     }
 
     @Override

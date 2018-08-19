@@ -6,7 +6,8 @@ public enum ErrorMessage {
     INVALID_ACCOUNT("02", "Account Does not Exist"),
     INVALID_ACCOUNT_INPUT("03", "Invalid Account Entered"),
     UNABLE_TO_CREATE_USER("04", "User creation failed"),
-    BILL_DOES_NOT_EXIST("05", "BIll Does not exist or have being deleted");
+    BILL_DOES_NOT_EXIST("05", "BIll Does not exist or have being deleted"),
+    CREDITING_AND_DEBITING_ACCOUNT_SAME("05", "Transfering to same account is not allowed");
 
     private String responseCode;
     private String responseMessage;

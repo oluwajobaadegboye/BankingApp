@@ -18,9 +18,16 @@ public class TransferDao {
 
     public Response createTransfer(Transfer transfer, Account debitingAccount) {
         Response response = null;
+        Account creditingAccount = accountDao.findAccountByNumber(transfer.getAccountNumber());
+        if(debitingAccount.getAccountNumber().equals(creditingAccount.getAccountNumber())){
+            response = new Response();
+            response.setResponseCode(ErrorMessage.CREDITING_AND_DEBITING_ACCOUNT_SAME.getResponseCode());
+            response.setResponseMessage(ErrorMessage.CREDITING_AND_DEBITING_ACCOUNT_SAME.getResponseMessage());
+            return response;
+        }
         boolean isDebited = debitAccount(debitingAccount, transfer);
         if (isDebited) {
-            creditAccount(transfer);
+            creditAccount(transfer,creditingAccount);
             response = buildResponse(ErrorMessage.SUCCESSFUL, debitingAccount);
         } else {
             response = buildResponse(ErrorMessage.FAILED, debitingAccount);
@@ -66,12 +73,12 @@ public class TransferDao {
         return isDebited;
     }
 
-    private void creditAccount(Transfer transfer) {
-        Account creditAccount = accountDao.findAccountByNumber(transfer.getAccountNumber());//recipient
-        creditAccount.setBalance(creditAccount.getBalance() + transfer.getTransferAmount());
-        accountDao.updateAccount(creditAccount);
+    private void creditAccount(Transfer transfer, Account creditingAccount) {
+        ;//recipient
+        creditingAccount.setBalance(creditingAccount.getBalance() + transfer.getTransferAmount());
+        accountDao.updateAccount(creditingAccount);
 
-        TransactionHistory transactionHistory = buildTransferHistory(creditAccount.getUserId(), transfer, transfer.getTransferAmount());
+        TransactionHistory transactionHistory = buildTransferHistory(creditingAccount.getUserId(), transfer, transfer.getTransferAmount());
         transactionHistoryDao.createHistory(transactionHistory);
     }
 

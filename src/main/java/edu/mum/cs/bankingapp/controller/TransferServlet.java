@@ -43,7 +43,6 @@ public class TransferServlet extends HttpServlet {
         } catch (JsonGenerationException e) {
             e.printStackTrace();
         }
-//        req.getRequestDispatcher("WEB-INF/pages/dashboard.jsp").forward(req, resp);
     }
 
     private Transfer readRequestBody(HttpServletRequest request) {
