@@ -7,50 +7,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08abc9cf-1469-49bb-9040-4e6fcdaf62dd" name="Default" comment="Initial Commit for Banking App">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/DashBoardServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/web/resources/script/bill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/AccountServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/BillPaymentServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/DashBoardServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/LoginServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/LogoutServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/TransferServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/UserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/dao/TransferDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/filter/AuthenticationFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/ErrorMessage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/Transfer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/service/AccountService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/service/BillPaymentService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/tag/CustomTag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/GenericTestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BankingApp_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/AccountServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/AccountServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/BillPaymentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/BillPaymentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransferServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransferServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransferDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransferDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/filter/AuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/ErrorMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/BillPaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/BillPaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/billpayment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/billpayment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/resources/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/resources/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/resources/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GenericTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GenericTestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/AccountServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/BillPaymentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/DashBoardServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/TransactionHistoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/TransferServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/controller/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/dao/TransactionHistoryDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/dao/TransferDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/filter/AuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/ErrorMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/model/Transfer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/service/AccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/service/BillPaymentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/bankingapp/tag/CustomTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GenericTestClass.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/.idea/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,62 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LoginServlet.java">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthenticationFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/filter/AuthenticationFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DashBoardServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/DashBoardServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransferServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransferServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="28" column="57" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/AccountServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="55" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/ErrorMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="6" column="59" lean-forward="true" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -128,6 +62,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>C:\Users\Joba\IdeaProjects\BankingApp</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -139,9 +78,7 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/AccountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/Transfer.java" />
         <option value="$PROJECT_DIR$/src/test/java/GenericTestClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransferDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/BillPaymentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/ErrorMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/BillPaymentServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/web/resources/script/bill.js" />
@@ -157,6 +94,9 @@
         <option value="$PROJECT_DIR$/src/main/web/resources/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransferServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/AccountServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/ErrorMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransferDao.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -169,8 +109,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
@@ -213,8 +153,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -223,41 +163,6 @@
               <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bankingapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bankingapp" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -265,7 +170,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/web" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Software Engineering/Projects/StudentRegistrationSystemSpringBootApp" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -462,6 +369,12 @@
       <workItem from="1531617581304" duration="27222000" />
       <workItem from="1531691506918" duration="447000" />
       <workItem from="1531692225150" duration="24135000" />
+      <workItem from="1531837067822" duration="647000" />
+      <workItem from="1531841912943" duration="173000" />
+      <workItem from="1533049487074" duration="706000" />
+      <workItem from="1534366456997" duration="747000" />
+      <workItem from="1534430251462" duration="1000" />
+      <workItem from="1534708992567" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit for Banking App">
       <created>1531512587828</created>
@@ -498,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531687327161</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Initial Commit for Banking App">
+      <created>1531794849463</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1531794849463</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -534,70 +454,80 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26379000" />
+    <option name="totallyTimeSpent" value="31492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="15" />
+      <window_info id="Image Layers" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="12" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50064266" side_tool="true" weight="0.4951049" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.23163842" />
-      <window_info anchor="right" id="Maven Projects" order="14" visible="true" weight="0.121875" />
+      <window_info anchor="right" id="Maven Projects" order="17" visible="true" weight="0.1302589" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="16" />
-      <window_info id="Designer" order="4" />
-      <window_info anchor="right" id="Database" order="9" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.4951049" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.17285383" />
+      <window_info id="Capture Tool" order="15" />
+      <window_info id="Designer" order="10" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.27184466" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Database" order="13" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info id="UI Designer" order="12" />
+      <window_info anchor="right" id="Theme Preview" order="16" />
+      <window_info id="Favorites" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.44335663" />
-      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32867134" />
-      <window_info anchor="right" id="Palette&#9;" order="10" />
-      <window_info id="Image Layers" order="5" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3290938" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.49378532" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.24745762" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2546875" />
-      <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Learn" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50064266" side_tool="true" weight="0.4951049" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25514138" />
-      <window_info id="Favorites" order="13" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="16" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.4951049" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.24745762" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.23163842" />
-      <window_info anchor="right" id="Palette" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="15" />
-      <window_info anchor="right" id="Maven Projects" order="17" visible="true" weight="0.12275064" />
-      <window_info id="Web" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info id="Image Layers" order="11" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
-      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Database" order="13" />
-      <window_info id="Capture Tool" order="15" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="right" id="Capture Analysis" order="12" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="12" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.44335663" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Designer" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.23163842" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.4951049" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.24745762" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50064266" side_tool="true" weight="0.4951049" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32867134" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.12275064" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25514138" />
+      <window_info id="Learn" order="2" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
+      <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44335663" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -626,13 +556,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransferDao.java</url>
-          <line>20</line>
+          <line>27</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransferDao.java</url>
-          <line>44</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
@@ -737,25 +667,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#toAccount#0;class#GenericConverter#0" />
-            <element signature="method#toBillPayment#0;class#GenericConverter#0" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/util/PasswordUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,13 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -810,10 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,32 +770,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/TransferService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/BillPaymentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding>
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransferDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="59" column="54" lean-forward="true" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
-          <folding>
-            <element signature="method#buildTransferHistoryForBillPayment#0;class#TransferDao#0" />
-            <element signature="method#debitAccount#0;class#TransferDao#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -921,7 +807,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="102">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -933,9 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -964,9 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
           <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -974,16 +854,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding>
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/filter/AuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="289">
           <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
         </state>
       </provider>
@@ -995,45 +871,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/resources/script/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="83" column="59" lean-forward="true" selection-start-line="83" selection-start-column="59" selection-end-line="83" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/TransactionHistoryResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1125#1126#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1329#1330#0" expanded="true" />
-            <element signature="e#1391#1392#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-            <element signature="e#1488#1489#0" expanded="true" />
-            <element signature="e#1522#1523#0" expanded="true" />
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1627#1628#0" expanded="true" />
-            <element signature="e#1667#1668#0" expanded="true" />
-            <element signature="e#1705#1706#0" expanded="true" />
-            <element signature="e#1765#1766#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1067,7 +908,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/DashBoardServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
+        <state relative-caret-position="187">
           <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1075,24 +916,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/AccountServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/TransferServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="57" />
+        <state relative-caret-position="357">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/service/TransferService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/dao/TransferDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+          <folding>
+            <element signature="method#buildTransferHistoryForBillPayment#0;class#TransferDao#0" />
+            <element signature="method#debitAccount#0;class#TransferDao#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/model/ErrorMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="6" column="59" lean-forward="true" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+        <state relative-caret-position="408">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/mum/cs/bankingapp/controller/AccountServlet.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="55" selection-end-column="9" />
+        <state relative-caret-position="510">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/resources/script/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="121" column="40" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -1102,7 +982,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>BankingApp:Web exploded</last-edited>
+          <last-edited>BankingApp:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1115,7 +995,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (BankingApp)|Web</last-edited>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1151,11 +1031,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|BankingApp</last-edited>
+          <last-edited>BankingApp</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
