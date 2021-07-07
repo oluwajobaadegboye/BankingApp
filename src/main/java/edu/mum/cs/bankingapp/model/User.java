@@ -5,11 +5,14 @@ import java.util.List;
 public class User extends IDObject {
     private String name;
     private String userName;
-    private String password; // base64 encoded string
+    private String password;
     private String email;
     private String mobile;
     private Address address;
 
+    public User(String id){
+        super(id);
+    }
     public User(String id, String name, String userName, String password, String email, String mobile, Address address) {
         super(id);
         this.name = name;
@@ -66,5 +69,17 @@ public class User extends IDObject {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", address=" + address +
+                '}';
     }
 }

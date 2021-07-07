@@ -1,46 +1,36 @@
 package edu.mum.cs.bankingapp.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
-
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.time.LocalDate;
 import java.util.Date;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class TransactionHistory extends IDObject {
+public class TransactionHistoryResponse extends IDObject {
 
     @NotNull
-    private String userId;
+    private User user;
     @NotNull
     private double transactionAmount;
+
     @Size(min = 2)
     private String recipient;
     @NotNull
     private String transactionType;
     @NotNull
-    private String billPaymentId;
+    private BillPayment billPayment;
     @NotNull
     private Date transactionDate;
 
-    public TransactionHistory(String id, String userId,double transactionAmount,
-                              String recipient,String transactionType,String billPaymentId,Date transactionDate) {
-        super(id);
-        this.userId = userId;
-        this.transactionAmount = transactionAmount;
-        this.recipient = recipient;
-        this.transactionType = transactionType;
-        this.billPaymentId = billPaymentId;
-        this.transactionDate = transactionDate;
+    public TransactionHistoryResponse(){
+        super("");
     }
 
-    public String getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public double getTransactionAmount() {
@@ -68,12 +58,12 @@ public class TransactionHistory extends IDObject {
         this.transactionType = transactionType;
     }
 
-    public String getBillPaymentId() {
-        return billPaymentId;
+    public BillPayment getBillPayment() {
+        return billPayment;
     }
 
-    public void setBillPaymentId(String billPaymentId) {
-        this.billPaymentId = billPaymentId;
+    public void setBillPayment(BillPayment billPayment) {
+        this.billPayment = billPayment;
     }
 
     public Date getTransactionDate() {
@@ -86,12 +76,12 @@ public class TransactionHistory extends IDObject {
 
     @Override
     public String toString() {
-        return "TransactionHistory{" +
-                "userId='" + userId + '\'' +
+        return "TransactionHistoryResponse{" +
+                "user=" + user +
                 ", transactionAmount=" + transactionAmount +
                 ", recipient='" + recipient + '\'' +
                 ", transactionType='" + transactionType + '\'' +
-                ", billPaymentId='" + billPaymentId + '\'' +
+                ", billPayment=" + billPayment +
                 ", transactionDate=" + transactionDate +
                 '}';
     }
